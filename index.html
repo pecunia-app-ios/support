@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Support page for Pecunia">
+  <meta name="color-scheme" content="light dark">
+  <title>Support | Pecunia</title>
+  <style>
+    :root {
+      --bg: #f5f6f8;
+      --card: #ffffff;
+      --text: #20242c;
+      --muted: #697386;
+      --border: #e2e6eb;
+      --accent: #2f6fed;
+      --soft: #eef4ff;
+      --max-width: 820px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101318;
+        --card: #171b22;
+        --text: #f3f5f7;
+        --muted: #aeb7c4;
+        --border: #303743;
+        --accent: #8ab4ff;
+        --soft: #1b2b48;
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    main {
+      width: min(calc(100% - 32px), var(--max-width));
+      margin: 48px auto;
+      padding: clamp(26px, 6vw, 58px);
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      box-shadow: 0 18px 55px rgb(0 0 0 / 8%);
+    }
+
+    h1, h2, h3 {
+      line-height: 1.25;
+      letter-spacing: -0.025em;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(2.1rem, 7vw, 3.35rem);
+    }
+
+    h2 {
+      margin: 2.5rem 0 0.8rem;
+      font-size: 1.45rem;
+    }
+
+    h3 {
+      margin: 1.35rem 0 0.45rem;
+      font-size: 1.08rem;
+    }
+
+    p, ul { margin: 0.8rem 0; }
+
+    ul { padding-left: 1.35rem; }
+
+    a {
+      color: var(--accent);
+      text-underline-offset: 3px;
+    }
+
+    .app-name {
+      margin: 0;
+      color: var(--accent);
+      font-size: 1.15rem;
+      font-weight: 700;
+    }
+
+    .subtitle {
+      margin: 0.25rem 0 2rem;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .hero {
+      padding: 22px;
+      background: var(--soft);
+      border-radius: 14px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 0.6rem;
+      padding: 11px 16px;
+      border-radius: 10px;
+      background: var(--accent);
+      color: #ffffff;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .faq-item {
+      padding: 18px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .faq-item:last-child {
+      border-bottom: 0;
+    }
+
+    .meta {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 560px) {
+      main {
+        width: 100%;
+        margin: 0;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="app-name">Pecunia</p>
+      <h1>Support</h1>
+      <p class="subtitle">Help, troubleshooting, and contact information.</p>
+    </header>
+
+    <section class="hero">
+      <h2 style="margin-top:0">How can we help?</h2>
+      <p>
+        Thank you for using Pecunia. For questions, technical issues, purchase problems,
+        or feedback, please contact us by email.
+      </p>
+      <a class="button" href="mailto:info.pecunia.app@gmail.com">Contact Support</a>
+      <p class="meta">Email: info.pecunia.app@gmail.com</p>
+    </section>
+
+    <section>
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="faq-item">
+        <h3>How do I restore my Premium purchase?</h3>
+        <p>
+          Open Pecunia and use the <strong>Restore Purchases</strong> option in the app.
+          Make sure you are signed in with the same Apple Account that was used for the
+          original purchase.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Where is my data stored?</h3>
+        <p>
+          Your transactions, categories, budgets, and other financial information are
+          stored locally on your device and synchronized through iCloud.
+        </p>
+        <p>
+          The developer cannot access your personal or financial data.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How do I recover my data on a new iPhone?</h3>
+        <p>
+          Sign in to the new device with the same Apple Account and make sure iCloud is
+          enabled for Pecunia. Your data should synchronize automatically.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Why is my data not syncing?</h3>
+        <p>Please check the following:</p>
+        <ul>
+          <li>You are signed in to iCloud.</li>
+          <li>iCloud is enabled for Pecunia in your device settings.</li>
+          <li>You are using the same Apple Account on all devices.</li>
+          <li>Your device has an active internet connection.</li>
+          <li>You have enough available iCloud storage.</li>
+        </ul>
+      </div>
+
+      <div class="faq-item">
+        <h3>How do I delete my data?</h3>
+        <p>
+          You can remove locally stored data by uninstalling Pecunia from your device.
+        </p>
+        <p>
+          Uninstalling the app may not automatically remove data synchronized through
+          iCloud. To remove those copies as well, manage Pecunia's iCloud data from your
+          Apple Account settings.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Does Pecunia collect personal data?</h3>
+        <p>
+          No. Pecunia does not require an account and does not use analytics, advertising,
+          or tracking tools.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How does the Premium purchase work?</h3>
+        <p>
+          Pecunia offers a one-time in-app purchase that unlocks all Premium features.
+          Payments are processed securely by Apple through the App Store.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Report a Problem</h2>
+      <p>
+        When reporting an issue, please include as much of the following information as possible:
+      </p>
+      <ul>
+        <li>Your iPhone or iPad model.</li>
+        <li>Your iOS or iPadOS version.</li>
+        <li>Your Pecunia app version.</li>
+        <li>A clear description of the issue.</li>
+        <li>Steps to reproduce the problem.</li>
+        <li>Screenshots, if they are helpful and do not contain sensitive information.</li>
+      </ul>
+      <p>
+        Please do not include financial information, transaction details, passwords, or
+        other sensitive data in support emails.
+      </p>
+    </section>
+
+    <section>
+      <h2>Feature Requests and Feedback</h2>
+      <p>
+        Suggestions are welcome. You can send feature requests, usability feedback, or
+        general comments to
+        <a href="mailto:info.pecunia.app@gmail.com">info.pecunia.app@gmail.com</a>.
+      </p>
+    </section>
+
+    <section>
+      <h2>Privacy</h2>
+      <p>
+        You can read Pecunia's Privacy Policy on the privacy page of this website.
+      </p>
+      <p>
+        <a href="../">Open the Privacy Policy</a>
+      </p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>
+        Support email:
+        <a href="mailto:info.pecunia.app@gmail.com">info.pecunia.app@gmail.com</a>
+      </p>
+      <p class="meta">Pecunia is developed by Antonio Martínez Manzano in Spain.</p>
+    </section>
+
+    <footer>
+      <p>© 2026 Pecunia · Antonio Martínez Manzano</p>
+    </footer>
+  </main>
+</body>
+</html>
